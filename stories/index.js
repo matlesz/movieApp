@@ -2,6 +2,7 @@ import MovieCard from "../src/components/movieCard";
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import FilterControls from "../src/components/filterControls";
 
 const sample = {
   adult: false,
@@ -89,4 +90,6 @@ storiesOf("Home Page/MovieCard", module)
     const sampleNoPoster = { ...sample, poster_path: undefined };
     return <MovieCard movie={sampleNoPoster} />;
   });
-
+  
+storiesOf("Home Page/FilterControls", module)
+  .add("default", () => <FilterControls /> )
