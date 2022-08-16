@@ -50,5 +50,5 @@ const FilterControls = props => {
         </div>
       </div>
   );
-
-export default FilterControls;
+            }
+  export default FilterControls;
