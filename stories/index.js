@@ -1,3 +1,4 @@
+import MovieCard from "../src/components/movieCard";
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
@@ -82,4 +83,10 @@ const sample = {
   vote_average: 7,
   vote_count: 9692
 };
+storiesOf("Home Page/MovieCard", module)
+  .add("default", () => <MovieCard movie={sample} />)
+  .add("exception", () => {
+    const sampleNoPoster = { ...sample, poster_path: undefined };
+    return <MovieCard movie={sampleNoPoster} />;
+  });
 

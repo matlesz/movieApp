@@ -15,7 +15,7 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -c ./.storybook",
+    "storybook": "start-storybook -s ./public -p 6006 -c ./.storybook",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
